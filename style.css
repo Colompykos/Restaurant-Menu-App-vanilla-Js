@@ -4,6 +4,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -56,7 +57,7 @@ body {
 /* end of parametring */
 
 /* Responsive menu */
-.respo-menu{
+.respo-menu {
   width: 55%;
   margin: 0 auto;
   display: flex;
@@ -67,7 +68,7 @@ body {
   display: none;
 }
 
-.respo-elem{
+.respo-elem {
   margin: 3px 0px;
   font-family: "URW Gordon W01 Medium";
   font-size: 25px;
@@ -76,15 +77,13 @@ body {
   /* transition:   0.5s; */
 }
 
-.respo-elem:hover{
+.respo-elem:hover {
   color: #f48c06;
   background-color: #e7e6e5ad;
-  border-radius: 1px 8px 8px 1px ;
+  border-radius: 1px 8px 8px 1px;
   /* width: 22%; */
-  transition:  0.5s;
+  transition: 0.5s;
 }
-
-
 
 .pages {
   margin-right: 15rem;
@@ -475,13 +474,12 @@ body {
 @media all and (max-width: 1174px) {
   .right {
     display: none;
-
   }
   .nav {
     justify-content: space-around;
   }
 
-  .toggle-btn{
+  .toggle-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,7 +490,231 @@ body {
     cursor: pointer;
   }
 
-  .respo-menu.show{
-    display: flex; 
+  .respo-menu.show {
+    display: flex;
+    height: 100vh;
+  }
+}
+
+/* mobile size 1 */
+
+@media all and (max-width: 767px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .logo-img {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .toggle-btn {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  /* container */
+  .description-container {
+    justify-content: center;
+    gap: 8rem;
+    width: 80%;
+  }
+
+  /* left part */
+  .part-1 {
+    font-size: 25px;
+  }
+  .part-2 {
+    font-size: 12px;
+  }
+
+  .explore-btn {
+    font-size: 9px;
+    width: 80px;
+    height: 30px;
+    margin-top: 2.5rem;
+  }
+
+  /* right part */
+
+  .image-container1 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+  .image-container1 img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .general-ratings {
+    height: 30px;
+    width: 9rem;
+    top: 1rem;
+    right: -2rem;
+    font-size: 11px;
+  }
+
+  .rating-1 {
+    width: 8.5rem;
+    bottom: 4rem;
+    left: -3.5rem;
+  }
+
+  .star-rating {
+    width: 65px;
+    height: 17px;
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .name-date {
+    font-size: 10px;
+  }
+
+  .comment-1 {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+
+  .certified {
+    margin: 0px 8px 4px auto;
+  }
+
+  .rating-2 {
+    width: 10rem;
+    right: -3rem;
+    bottom: 1rem;
+  }
+
+  /* Menu part */
+
+  .title-menu {
+    width: fit-content;
+    font-size: 45px;
+  }
+
+  .btns {
+    font-size: 13px;
+    width: 65px;
+  }
+
+  .menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .elem-menu1 {
+    /* border: 1px solid red; */
+    flex-basis: 95%;
+    justify-content: center;
+  }
+
+  .img {
+    height: 100px;
+    width: 140px;
+  }
+
+  .name-price {
+    font-size: 12px;
+  }
+
+
+
+}
+
+/* mobile size 2 */
+
+@media all and (max-width: 599px) {
+  /* container */
+  .description-container {
+    width: 80%;
+    gap: 4rem;
+  }
+
+  /* left part */
+  .part-1 {
+    font-size: 20px;
+  }
+  .part-2 {
+    font-size: 10px;
+  }
+
+  .explore-btn {
+    font-size: 8px;
+    width: 75px;
+    height: 27px;
+    margin-top: 2rem;
+  }
+
+  /* right part */
+
+  .image-container1 {
+    width: 150px;
+    height: 150px;
+  }
+  .image-container1 img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .general-ratings {
+    height: 25px;
+    width: 8rem;
+    top: 0.5rem;
+    right: -3rem;
+    font-size: 10px;
+  }
+
+  .rating-1 {
+    width: 7.5rem;
+    bottom: 7rem;
+    left: -3.5rem;
+  }
+
+  .star-rating {
+    width: 60px;
+    height: 15px;
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .img-container2 {
+    width: 23px;
+    height: 23px;
+  }
+
+  .img-container2 img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .name-date {
+    font-size: 8px;
+  }
+
+  .comment-1 {
+    font-size: 10px;
+  }
+
+  .certified {
+    margin: 0px 8px 7px auto;
+    height: 9px;
+    width: 9px;
+  }
+
+  .rating-2 {
+    width: 7rem;
+    right: -2.5rem;
+    bottom: 4rem;
+  }
+  .img-content2 {
+    margin-top: 4px;
+  }
+
+  .buttons {
+    justify-content: space-evenly;
   }
 }
