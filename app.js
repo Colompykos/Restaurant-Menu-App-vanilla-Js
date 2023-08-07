@@ -180,3 +180,16 @@ const displayBtns = (arrayMenu) => {
     });
   });
 };
+
+// manage the click on toogle btn 
+
+const toogBtn = document.querySelector(".toggle-btn");
+const navbar = document.querySelector(".respo-menu");
+
+toogBtn.addEventListener("click", ()=>{
+  navbar.classList.toggle('show');
+
+})
+
+
+
