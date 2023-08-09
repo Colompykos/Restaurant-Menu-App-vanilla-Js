@@ -163,13 +163,14 @@ body {
   height: 600px;
   border-radius: 50%;
   object-fit: cover;
+
 }
 
 .general-ratings {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   position: absolute;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
@@ -621,9 +622,6 @@ body {
   .name-price {
     font-size: 12px;
   }
-
-
-
 }
 
 /* mobile size 2 */
@@ -631,8 +629,9 @@ body {
 @media all and (max-width: 599px) {
   /* container */
   .description-container {
-    width: 80%;
-    gap: 4rem;
+    justify-content: space-between;
+    width: 73%;
+    gap: 2rem;
   }
 
   /* left part */
@@ -663,51 +662,56 @@ body {
 
   .general-ratings {
     height: 25px;
-    width: 8rem;
+    width: 6.5rem;
     top: 0.5rem;
-    right: -3rem;
-    font-size: 10px;
+    right: -1.5rem;
+    font-size: 7px;
   }
 
   .rating-1 {
-    width: 7.5rem;
+    width: 5rem;
     bottom: 7rem;
-    left: -3.5rem;
+    left: -1rem;
   }
 
   .star-rating {
-    width: 60px;
-    height: 15px;
-    font-size: 9px;
-    margin-bottom: 5px;
+    width: 45px;
+    height: 12px;
+    font-size: 7px;
+    margin-bottom: 4px;
   }
   .img-container2 {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
   }
 
   .img-container2 img {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
   }
 
   .name-date {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .comment-1 {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   .certified {
-    margin: 0px 8px 7px auto;
-    height: 9px;
-    width: 9px;
+    margin: 0px 8px 6.5px auto;
+    height: 0px;
+    width: 0px;
+  }
+
+  .certified img{
+    height: 7.5px;
+    width: 7.5px;
   }
 
   .rating-2 {
-    width: 7rem;
-    right: -2.5rem;
+    width: 5.5rem;
+    right: -1.5rem;
     bottom: 4rem;
   }
   .img-content2 {
